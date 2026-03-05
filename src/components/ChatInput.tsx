@@ -32,6 +32,13 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, disabled })
     }
   }, [input]);
 
+  // Auto-focus when re-enabled
+  useEffect(() => {
+    if (!disabled && textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [disabled]);
+
   return (
     <div className="border-t border-slate-100 bg-white p-4 sm:p-6">
       <form onSubmit={handleSubmit} className="max-w-3xl mx-auto relative flex items-end gap-2">
