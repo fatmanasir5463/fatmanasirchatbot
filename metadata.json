@@ -1,0 +1,5 @@
+{
+  "name": "Nova Chat",
+  "description": "A modern, responsive ChatGPT-style chatbot with local intelligence and a clean UI.",
+  "requestFramePermissions": []
+}
